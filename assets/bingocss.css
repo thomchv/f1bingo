@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+}
+
+.bingo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.facile, .normal, .difficile, .impossible {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+}
+.item {
+    width: 20vw;
+    height: 18vh;
+    background-color: #D2D2D2;
+    border-radius: 20px;
+}
+div.item {
+    position:relative;
+    border:1px solid red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden
+}
+div.item img {
+    min-width:100%;
+    min-height:100%;
+}
+div.item h1, h3 {
+    position:absolute;
+    font-family: 'formula1display-wide', sans-serif;
+    color: white;
+    text-shadow: black 0.3vh 0.3vh;
+}
+
+
+
+    /* MEDIA QUERIES */
+@media screen and (max-width: 767px) {  /* PHONE */ 
+    .item {
+        width: 40vh;
+        height: 36vw;
+    }
+    .facile, .normal, .difficile, .impossible {
+        flex-direction: column;
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {  /* TABLET */
+    .item {
+        width: 40vh;
+        height: 36vw;
+    }
+    .facile, .normal, .difficile, .impossible {
+        flex-direction: column;
+        height: 80vh;
+    }
+    div.item h1 {
+        font-size: 2vh;
+    }
+    div.item h3 {
+        font-size: 1.5vh;
+    }
+}
