@@ -54,6 +54,23 @@ li a:hover {
 }
 
 
+#titrecountdown {
+  font-family: 'formula1display-wide', sans-serif;
+  color: red;
+  font-size: 3vh;
+  text-align: center;
+  padding-top: 5vh;
+}
+#countdown {
+  font-family: 'formula1display-wide', sans-serif;
+  color: red;
+  font-size: 3vh;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+
+
 
     /* MEDIA QUERIES */
 @media screen and (max-width: 767px) {  /* PHONE */ 
@@ -70,6 +87,9 @@ li a:hover {
     margin-left: 1vh;
     margin-right: 1vh;
   }
+  #countdown, #titrecountdown {
+    font-size: 1.5vh;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {  /* TABLET */
@@ -85,6 +105,9 @@ li a:hover {
   .logo {
     margin-left: 1vh;
     margin-right: 1vh;
+  }
+  #countdown, #titrecountdown {
+    font-size: 1.5vh;
   }
 }
       
