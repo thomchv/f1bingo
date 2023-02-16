@@ -10,6 +10,12 @@ body {
 
 
 
+.updated {
+    font-family: 'formula1display-wide', sans-serif;
+    color: white;
+    margin-right: 10vw;
+}
+
 .facile, .normal, .difficile, .impossible {
     padding-top: 5vh;
     display: flex;
@@ -55,9 +61,19 @@ div.item h1, h3 {
         flex-direction: column;
         height: 80vh;
     }
+    div.item h1 {
+        font-size: 2vh;
+    }
+    div.item h3 {
+        font-size: 1.5vh;
+    }
+    .updated {
+        margin-left: 2vw;
+        margin-right: 0;
+    }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {  /* TABLET */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
     .item {
         width: 40vh;
         height: 36vw;
@@ -71,5 +87,9 @@ div.item h1, h3 {
     }
     div.item h3 {
         font-size: 1.5vh;
+    }
+    .updated {
+        margin-left: 2vw;
+        margin-right: 0;
     }
 }
