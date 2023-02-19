@@ -15,7 +15,6 @@ body {
     color: white;
     margin-right: 10vw;
 }
-
 .facile, .normal, .difficile, .impossible {
     padding-top: 5vh;
     display: flex;
@@ -23,6 +22,9 @@ body {
     align-items: center;
     justify-content:space-around;
     width: 100%;
+}
+.impossible {
+    padding-bottom: 10vh;
 }
 .item {
     width: 20vw;
